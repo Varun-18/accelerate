@@ -335,8 +335,8 @@ export const Socials = () => {
           </div>
           <div>
             <svg
-              width="800px"
-              height="800px"
+              width="60px"
+              height="auto"
               viewBox="0 -9 58 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
