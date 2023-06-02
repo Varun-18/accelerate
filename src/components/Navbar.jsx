@@ -7,7 +7,7 @@ export const Navbar = () => {
   const { navbar, menu, showMenu } = useNavbar();
 
   return (
-    <div className=" bg-black ">
+    <div className="md:block hidden bg-black ">
       {_.size(navbar) > 0 ? (
         <ul className="flex justify-center max-w-[1200px]  mx-auto  text-white ">
           {navbar.map((items, index) => (

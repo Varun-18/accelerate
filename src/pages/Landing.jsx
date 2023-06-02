@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { Navbar } from "../components/Navbar";
 import { ProductListing } from "../components/ProductListing";
 import { Promo } from "../components/Promo";
@@ -16,6 +17,7 @@ const Landing = () => {
 
   return (
     <div>
+      <Header />
       <Navbar />
       <Banner />
       <Promo data={promo} />

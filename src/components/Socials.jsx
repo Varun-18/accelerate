@@ -8,13 +8,15 @@ export const Socials = () => {
   return (
     <div className="max-w-[1200px] sm:mx-auto md:flex lg:justify-between text-[#ddd] py-3 gap-2  md:mx-2 ">
       <div className=" md:flex mx-3 md:mx-0 flex-1 py-3 items-center justify-evenly   gap-3">
-        <div className="uppercase  font-bold xl:text-lg text-sm pb-2 md:pb-0">Follow us on</div>
+        <div className="uppercase  font-bold xl:text-lg text-sm pb-2 md:pb-0">
+          Follow us on
+        </div>
         <div>
           {_.size(socials) > 0 ? (
             <div className="flex items-center gap-3 xl:gap-2">
-              {socials.map((item) =>
+              {socials.map((item, index) =>
                 item.name === "facebook" && item.url && _.size(item.url) > 0 ? (
-                  <span>
+                  <span key={index}>
                     <svg
                       width="40px"
                       height="auto"
@@ -31,9 +33,9 @@ export const Socials = () => {
                   </span>
                 ) : null
               )}
-              {socials.map((item) =>
+              {socials.map((item, index) =>
                 item.name === "twitter" && item.url && _.size(item.url) > 0 ? (
-                  <span>
+                  <span key={index}>
                     <svg
                       width="35px"
                       height="auto"
@@ -75,9 +77,9 @@ export const Socials = () => {
                   </span>
                 ) : null
               )}
-              {socials.map((item) =>
+              {socials.map((item, index) =>
                 item.name === "pintrest" && item.url && _.size(item.url) > 0 ? (
-                  <span>
+                  <span key={index}>
                     <svg
                       width="40px"
                       height="auto"
@@ -96,11 +98,11 @@ export const Socials = () => {
                   </span>
                 ) : null
               )}
-              {socials.map((item) =>
+              {socials.map((item, index) =>
                 item.name === "instagram" &&
                 item.url &&
                 _.size(item.url) > 0 ? (
-                  <span>
+                  <span key={index}>
                     <svg
                       fill="#ffffff"
                       width="35px"
@@ -131,9 +133,9 @@ export const Socials = () => {
                   </span>
                 ) : null
               )}
-              {socials.map((item) =>
+              {socials.map((item, index) =>
                 item.name === "youtube" && item.url && _.size(item.url) > 0 ? (
-                  <span>
+                  <span key={index}>
                     <svg
                       fill="#ffffff"
                       width="35px"
@@ -166,7 +168,9 @@ export const Socials = () => {
         </div>
       </div>
       <div className="flex-1 md:flex py-3 mx-3 items-center xl:justify-between gap-2 justify-evenly">
-        <div className="uppercase  font-bold xl:text-lg text-sm pb-2 md:pb-0 ">Payment method</div>
+        <div className="uppercase  font-bold xl:text-lg text-sm pb-2 md:pb-0 ">
+          Payment method
+        </div>
         <div className="flex gap-3.5">
           <div>
             <svg
@@ -415,7 +419,9 @@ export const Socials = () => {
         </div>
       </div>
       <div className=" md:flex mx-1.5  md:mx-0  py-3   items-center xl:justify-between justify-evenly  ">
-        <div className="xl:text-lg  text-sm font-bold uppercase pb-2 md:pb-0 mx-2">download app on</div>
+        <div className="xl:text-lg  text-sm font-bold uppercase pb-2 md:pb-0 mx-2">
+          download app on
+        </div>
         <div className="flex  gap-3 items-center mx-2">
           <div>
             <svg

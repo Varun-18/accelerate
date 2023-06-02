@@ -55,11 +55,8 @@ export const TopCategories = () => {
                 }}
               >
                 {categories.map((item, index) => (
-                  <SwiperSlide>
-                    <div
-                      key={index}
-                      className=" m-auto flex items-center flex-col text-[#444] hover:text-red-600 cursor-pointer"
-                    >
+                  <SwiperSlide key={index}>
+                    <div className=" m-auto flex items-center flex-col text-[#444] hover:text-red-600 cursor-pointer">
                       <img
                         className="sm:max-w-[200px] max-w-[140px]"
                         src={item.image.fields.file.url}
