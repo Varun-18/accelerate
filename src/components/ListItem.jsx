@@ -7,7 +7,7 @@ export const ListItem = ({ data }) => {
   return (
     <div>
       <li
-        className="py-3 px-3 mx-4 uppercase font-semibold flex justify-center items-center"
+        className="sm:py-3 sm:px-3 sm:mx-4 uppercase sm:text-base text-xs mx-2 font-semibold flex justify-center items-center"
         onMouseEnter={() => setShowMenu(true)}
         onMouseLeave={() => setShowMenu(false)}
       >

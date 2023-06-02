@@ -21,11 +21,13 @@ export const DisplayImage = ({ url, alt }) => {
           />
         </svg>
       </button>
-      <img
-        className="w-full px-6 bg-transparent group-hover:opacity-80 group-hover:bg-opacity-80 group-hover:bg-gray-200 transition-all duration-500"
-        src={url}
-        alt={alt}
-      />
+      <div className="mx-auto max-w-[200px]">
+        <img
+          className="w-full px-6 bg-transparent group-hover:opacity-80 group-hover:bg-opacity-80 group-hover:bg-gray-200 transition-all duration-500"
+          src={url}
+          alt={alt}
+        />
+      </div>
       <button className="group/button group-hover:block hidden absolute bg-black group hover:bg-white p-2 rounded-md right-1 bottom-1">
         <svg id="SvgjsSvg1011" width="30" height="30" version="1.1">
           <defs id="SvgjsDefs1012"></defs>

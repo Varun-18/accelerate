@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <div className=" bg-black ">
       {_.size(navbar) > 0 ? (
-        <ul className="flex justify-center max-w-[1200px] mx-auto  text-white ">
+        <ul className="flex justify-center max-w-[1200px]  mx-auto  text-white ">
           {navbar.map((items, index) => (
             <ListItem data={items} key={index} />
           ))}
